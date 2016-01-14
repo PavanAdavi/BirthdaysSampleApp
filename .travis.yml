@@ -6,7 +6,7 @@
 
 language: objective-c
 script: 
-  - xctool -project Birthdays.xcodeproj -scheme BirthdaysTests build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+  - xctool -project Birthdays.xcodeproj -scheme Birthdays build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 52ebf1b4-fdea-4cd6-9273-514c4d3af8d5
